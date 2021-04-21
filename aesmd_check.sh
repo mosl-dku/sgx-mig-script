@@ -1,4 +1,5 @@
 #!/bin/bash
+`sudo service aesmd restart`
 
 AESMD_STATUS=`service aesmd status | grep running | awk '{print $3}'`
 RUN="(running)"
